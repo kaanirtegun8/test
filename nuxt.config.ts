@@ -5,6 +5,11 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
   ],
 
+  ssr: false,
+  nitro: {
+    preset: 'static'
+  },
+
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
